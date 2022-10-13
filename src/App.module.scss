@@ -1,0 +1,23 @@
+:root{
+  --blue-800: #0FA2C2;
+  --green-300: #CBE94D;
+  --green-500: #497724;
+  --purple-dark:#171428;
+  --purple-mean: #252238;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image: url('assets/space2.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.App{
+
+}
