@@ -1,9 +1,12 @@
 :root{
-  --blue-800: #0FA2C2;
+  --blue-900: #001B31;
+  --blue-800: #5DA3AE;
   --green-300: #CBE94D;
   --green-500: #497724;
   --purple-dark:#171428;
   --purple-mean: #252238;
+  --grey-dark: #111015;;
+  --grey-500: #18171C;
 }
 *{
   margin: 0;
@@ -12,12 +15,25 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1{
+  color: white;
+}
+h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+p{
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #a0a0a0;
+}
 body{
-  background-image: url('assets/space2.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
 }
+
 .App{
-  border-radius: 0.4rem;
+  min-height: 100vh;
+  position: relative;
 }

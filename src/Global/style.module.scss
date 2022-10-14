@@ -1,5 +1,26 @@
+@keyframes is-Rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 .container{
     width: 100%;
     height: 100%;
     margin: auto;
+}
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        animation: is-Rotate 1s infinite;
+    }
+}
+.alert{
+    color: white;
+    margin: auto;
+}
+.warning{
+
 }

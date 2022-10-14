@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    flex-direction: column;
+    border-radius: 3rem;        
+    border: 1px solid var(--blue-800);
+    box-shadow:1px 1px 15px 1px #000000b2;
+    color: white;
+    width: 210px;
+    min-height: 280px;
+    height: 280px;
+    margin-bottom: 2rem;
+    .contentImage{
+        display: flex;
+        position: relative;
+        height: 50%;
+    }
+    div{
+        height: 50%;
+    }
+    img{
+        position: absolute;
+        box-shadow:1px 1px 25px 2px #000000;
+        border: 2px solid #cae94db2;
+        margin: auto;
+        margin-top: -40%;
+        width: 160px;
+        border-radius: 50rem;
+        height: 160px;
+    }
+}

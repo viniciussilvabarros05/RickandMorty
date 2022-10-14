@@ -3,7 +3,7 @@ import styles from './App.module.scss'
 import style from './Global/style.module.scss'
 import { Home } from './Home/Home'
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
-import { Dashboard } from './assets/Pages/Dashboar/Dash'
+import { Dashboard } from './Pages/Dashboar/Dash'
 function App() {
   return (
     <div className={styles.App}>
