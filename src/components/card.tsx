@@ -1,28 +1,23 @@
 import style from './card.module.scss'
-
-export interface DataProps{
-    id:number;
-    name:string;
-    status:string;
-    species:string;
-    gender: string;
-    origin: {name:string, url:string};
-    image: string;
-    episode:string[];
-}
+import {DataProps} from '../@types/data/data'
+import { Dispatch, useState } from 'react'
+import { Modal } from './modal/modal';
 interface Props {
-    data: DataProps
+    data: DataProps;
+    setCharacter: Dispatch<DataProps>
 }
-export function Card({data}:Props){
+export function Card({data, setCharacter}:Props){
     return(
-        <div className={style.container}>
-            <div className={style.contentImage}>
-                <img src={data?.image}/>
+        <>
+            <div className={style.container} onClick={()=> setCharacter(data)}>
+                <div className={style.contentImage}> 
+                    <img src={data?.image}/>
+                </div>
+                <div>
+                    <h2>{data?.name}</h2>
+                    <p>{data?.species}</p>
+                </div>
             </div>
-            <div>
-                <h2>{data?.name}</h2>
-                <p>{data?.species}</p>
-            </div>
-        </div>
+        </>
     )
 }

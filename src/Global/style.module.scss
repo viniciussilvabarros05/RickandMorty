@@ -21,6 +21,18 @@
     color: white;
     margin: auto;
 }
-.warning{
-
+.loadMore{
+    transition: all 0.2s ease;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color: var(--blue-800);
+    width: 220px;
+    margin:auto;
+    cursor: pointer;
+    &:hover{
+        filter: brightness(0.8);
+    }
 }
