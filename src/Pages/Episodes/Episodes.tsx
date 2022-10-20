@@ -66,8 +66,12 @@ export function Episodes() {
 
   function HandleSearch(search: string, filter?: number) {
     setIsLoading(true);
+    let query = `/episode/`
+    if(Number(search)){
+      query = `/episode/${search}`
+    }
     api
-      .get(`/episode/${search}`, {
+      .get(query, {
         params: {
           page: page,
           name: search,
